@@ -292,7 +292,7 @@ function generate_output($config, $models, $frontend)
     // generate entry points
     $template = file_get_contents('tmpl'.DS.'entry_point.php');
 
-    $config['include_tables'] = "JTable::addIncludePath(JPATH_COMPONENT.DS.'tables');\n\n";
+    $config['include_tables'] = "JTable::addIncludePath(JPATH_COMPONENT.DIRECTORY_SEPARATOR.'tables');\n\n";
     file_put_contents($admin_path.$config['entry_point'], render($template, $config));
 
     $config['include_tables'] = '';

@@ -2,9 +2,9 @@ name: Blog
 identifier: Blog
 component: com_blog
 version: 1.0.0
-date: May 2010
+date: Dec 2014
 author:
-    name: JetWorks
+    name: Rodrigo Spillere
     email: rodrigo@jetworks.com.br
     url: http://jetworks.com.br
 copyright: 2010 JetWorks. All rights reserved.

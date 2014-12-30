@@ -46,11 +46,11 @@ class {{identifier}}View{{viewClass}} extends JViewLegacy
         $layout = JRequest::getVar('layout');
         if($layout == "list") {
             JToolBarHelper::deleteList();
-            JToolBarHelper::editListX();
-            JToolBarHelper::addNewX();
-            $this->assignRef('items', $this->get('Items'));
+            JToolBarHelper::editList();
+            JToolBarHelper::addNew();
+            $this->assign('items', $this->get('Items'));
         } else {
-            $this->assignRef('item', $this->get('Item'));
+            $this->assign('item', $this->get('Item'));
             JToolBarHelper::save();
             JToolBarHelper::cancel();
         }

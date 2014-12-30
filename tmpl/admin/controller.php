@@ -55,7 +55,7 @@ class {{identifier}}Controller{{controller}} extends {{identifier}}Controller
     {
         JRequest::setVar('view', '{{controller}}');
         JRequest::setVar('hidemainmenu', 1);
-        parent::display();
+        parent::display($cachable = false, $urlparams = array());
     }
 
     /**

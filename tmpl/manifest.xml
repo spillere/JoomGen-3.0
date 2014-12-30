@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="component" version="3.0" method="upgrade">
+<extension type="component" version="3.2" method="upgrade">
   <name>{{name}}</name>
   <version>{{version}}</version>
   <creationDate>{{date}}</creationDate>
@@ -61,4 +61,4 @@
       <folder>views</folder>
         </files>
     </administration>
-</install>
+</extension>

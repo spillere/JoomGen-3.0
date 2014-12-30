@@ -19,12 +19,12 @@ defined('_JEXEC') or die('Restricted access');
 {{include_tables}}/**
  * Require the base controller
  */
-require_once JPATH_COMPONENT.DS.'controller.php';
+require_once JPATH_COMPONENT.DIRECTORY_SEPARATOR.'controller.php';
 
 // Require specific controller if requested
 jimport('joomla.filesystem.file');
 if($controller = JFile::makeSafe(JRequest::getWord('controller'))) {
-    $path = JPATH_COMPONENT.DIRECTORY_SEPARATOR.'controllers'.DS.$controller.'.php';
+    $path = JPATH_COMPONENT.DIRECTORY_SEPARATOR.'controllers'.DIRECTORY_SEPARATOR.$controller.'.php';
     if (file_exists($path)) {
         require_once $path;
     } else {

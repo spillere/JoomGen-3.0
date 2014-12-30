@@ -42,9 +42,9 @@ class {{identifier}}View{{viewClass}} extends JViewLegacy
         // Handle different data for different layouts
         $layout = JRequest::getVar('layout');
         if($layout == "list") {
-            $this->assignRef('items', $this->get('Items'));
+            $this->assign('items', $this->get('Items'));
         } else {
-            $this->assignRef('item', $this->get('Item'));
+            $this->assign('item', $this->get('Item'));
         }
 
         parent::display($tpl);

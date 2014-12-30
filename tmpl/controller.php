@@ -37,8 +37,8 @@ class {{identifier}}Controller extends JControllerLegacy
      * @access public
      * @since  1.0
      */
-    public function display()
+    public function display($cachable = false, $urlparams = array())
     {
-        parent::display();
+        parent::display($cachable = false, $urlparams = array());
     }
 }
