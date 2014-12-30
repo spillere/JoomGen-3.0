@@ -127,3 +127,11 @@ An example frontend.yaml file:
 * required: defaults to "true"
 * description: defaults to a capitalized version of the field name. "contact_name" became "Contact Name"
 
+#### Generating the component
+
+For generating the component you just need to type the line above on the command line:
+<pre>
+~$ php [path_to_joomgen]/bin/joomgen.php
+</pre> 
+
+And your component's package will be available on the root folder of Joomgen
