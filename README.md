@@ -129,7 +129,7 @@ An example frontend.yaml file:
 
 #### Generating the component
 
-For generating the component you just need to type the line above on the command line:
+For generate the component you just need to type the line above on the command line:
 <pre>
 ~$ php [path_to_joomgen]/bin/joomgen.php
 </pre> 
