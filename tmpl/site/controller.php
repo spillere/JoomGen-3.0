@@ -55,10 +55,10 @@ class {{identifier}}Controller{{controller}} extends {{identifier}}Controller
         $model = $this->getModel('{{controller}}');
         if ($model->save()) {
             $msg = JText::_('Object created successfully!');
-            $url = 'index.php?option={{component}}&amp;view={{controller}}&amp;layout=list';
+            $url = 'index.php?option={{component}}&view={{controller}}&layout=list';
         } else {
             $msg = JText::_('Error while created object: '.$model->getError());
-            $url = 'index.php?option={{component}}&amp;view={{controller}}&amp;layout=new';
+            $url = 'index.php?option={{component}}&view={{controller}}&layout=new';
         }
         $this->setRedirect(JRoute::_($url), $msg);
     }

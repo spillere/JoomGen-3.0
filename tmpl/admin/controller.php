@@ -73,7 +73,7 @@ class {{identifier}}Controller{{controller}} extends {{identifier}}Controller
         } else {
             $msg = JText::_('Error: '.$model->getError());
         }
-        $this->setRedirect(JRoute::_('index.php?option={{component}}&amp;view={{controller}}&amp;layout=list'), $msg);
+        $this->setRedirect(JRoute::_('index.php?option={{component}}&view={{controller}}&layout=list', false), $msg);
     }
 
     /**
@@ -91,7 +91,7 @@ class {{identifier}}Controller{{controller}} extends {{identifier}}Controller
         } else {
             $msg = JText::_('Successfully deleted objects!');
         }
-        $this->setRedirect(JRoute::_('index.php?option={{component}}&amp;view={{controller}}&amp;layout=list'), $msg);
+        $this->setRedirect(JRoute::_('index.php?option={{component}}&view={{controller}}&layout=list', false), $msg);
     }
 
     /**
@@ -104,7 +104,7 @@ class {{identifier}}Controller{{controller}} extends {{identifier}}Controller
     public function cancel()
     {
         $msg = JText::_('Operation Aborted');
-        $this->setRedirect(JRoute::_('index.php?option={{component}}&amp;view={{controller}}&amp;layout=list'), $msg);
+        $this->setRedirect(JRoute::_('index.php?option={{component}}&view={{controller}}&layout=list', false), $msg);
     }
 
 {{publish_function}}
