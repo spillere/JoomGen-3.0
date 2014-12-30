@@ -19,7 +19,7 @@ jimport('joomla.filter.filteroutput');
 
 <table class="adminform"><tr><td>
 <div id="{{view}}">
-    <form action="index.php" method="post" name="adminForm">
+    <form action="index.php" method="post" name="adminForm" id="adminForm">
     <div id="editcell">
         <table class="adminlist">
         <thead>
@@ -55,5 +55,6 @@ jimport('joomla.filter.filteroutput');
     <input type="hidden" name="boxchecked" value="0" />
     <input type="hidden" name="view" value="{{view}}" />
     <input type="hidden" name="controller" value="{{view}}" />
+</form>
 </div>
 </td></tr></table>
