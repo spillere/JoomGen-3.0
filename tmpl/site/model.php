@@ -68,7 +68,7 @@ class {{identifier}}Model{{model}} extends JModelLegacy
     public function getItem()
     {
         $id = JRequest::getVar('id', "");
-        $params = &JComponentHelper::getParams('com_jobline');
+        $params = &JComponentHelper::getParams('{{component}}');
         if($id == "") {
             $id = $params->get('id');
         }
