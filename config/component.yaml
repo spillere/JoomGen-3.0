@@ -1,13 +1,13 @@
-name: Blog
-identifier: Blog
-component: com_blog
+name: dasaforms
+identifier: Dasaforms
+component: com_dasaforms
 version: 1.0.0
-date: Dec 2014
+date: May 2015
 author:
     name: Rodrigo Spillere
-    email: rodrigo@jetworks.com.br
-    url: http://jetworks.com.br
-copyright: 2010 JetWorks. All rights reserved.
+    email: rodrigo.spillere@coffeebeantech.com
+    url: http://www.coffeebeantech.com
+copyright: 2015 CoffeeBean. All rights reserved.
 license: GNU General Public License
 description: Component description
 default_language: en-GB

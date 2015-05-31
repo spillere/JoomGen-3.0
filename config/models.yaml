@@ -1,14 +1,16 @@
-posts:
-    title: string
-    alias:
-        type: string
-        required: false
-    content: rich_text
-    author_name:
-        type: string
-        description: Author
-    created_on: datetime
-    published: bool
-
-categories:
-    title: string
+forms:
+    nome_form: string
+    campo: string
+    tipo: int
+    api: int
+fields:
+	field_string: string
+	field_text: text
+	field_int: int
+	field_datetime: datetime
+	field_date: date
+	field_time: time
+	field_double: double
+	field_decimal: decimal
+	field_richtext: rich_text
+	field_bool: bool

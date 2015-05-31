@@ -1,4 +1,2 @@
-posts:
-    details: title content author_name
-    new: title alias content author_name
-    list: title author_name
+fields:
+    new: field_string field_text field_int field_datetime field_date field_time field_double field_decimal field_richtext field_bool
